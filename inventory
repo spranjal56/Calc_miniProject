@@ -1,1 +1,2 @@
+[pranjal]
 client1 ansible_host=172.16.130.200 ansible_connection=ssh ansible_user=ansible1
