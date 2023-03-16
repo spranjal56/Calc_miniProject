@@ -12,4 +12,4 @@
       shell: docker pull spranjal56/mini_proj_calc_spe
 
     - name: running container
-      shell: docker create -it --name pranjalKaContainer spranjal56/mini_proj_calc_spe
+      shell: docker run -it spranjal56/mini_proj_calc_spe
