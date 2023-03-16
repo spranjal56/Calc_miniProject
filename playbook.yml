@@ -12,4 +12,20 @@
       shell: docker pull spranjal56/mini_proj_calc_spe
 
     - name: running container
-      shell: docker run -it -d spranjal56/mini_proj_calc_spe
+      shell: docker run -it spranjal56/mini_proj_calc_spe
+
+#---
+#- name: Pull docker image of Calculator
+#  hosts: all
+#  tasks:
+#
+#    - name: Start docker service
+#      service:
+#        name: docker
+#        state: started
+#
+#    - name: pull docker image
+#      shell: docker pull sbrc1996/speminiproject
+#
+#    - name: running container
+#      shell: docker create -it --name brcKaContainer sbrc1996/speminiproject
