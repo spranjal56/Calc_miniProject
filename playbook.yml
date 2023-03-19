@@ -11,5 +11,5 @@
     - name: pull docker image
       shell: docker pull spranjal56/mini_proj_calc_spe
 
-#    - name: running container
-#      shell: docker run -it spranjal56/mini_proj_calc_spe
+#     - name: running container
+#       shell: docker run --name pranjalKaContainer -it spranjal56/mini_proj_calc_spe
