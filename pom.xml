@@ -1,27 +1,19 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.example</groupId>
-  <artifactId>spe_minProjCalc</artifactId>
+  <artifactId>SPE_MiniProject_Calculator</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
 
-<!--  <name>spe_minProjCalc</name>-->
-<!--  <url>http://maven.apache.org</url>-->
+  <properties>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
 
-<!--  <properties>-->
-<!--    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
-<!--  </properties>-->
-
-<!--  <dependencies>-->
-<!--    <dependency>-->
-<!--      <groupId>junit</groupId>-->
-<!--      <artifactId>junit</artifactId>-->
-<!--      <version>3.8.1</version>-->
-<!--      <scope>test</scope>-->
-<!--    </dependency>-->
-<!--  </dependencies>-->
 
   <build>
     <plugins>
@@ -38,7 +30,7 @@
             <configuration>
               <archive>
                 <manifest>
-                  <mainClass>org.example.App</mainClass>
+                  <mainClass>org.example.Main</mainClass>
                 </manifest>
               </archive>
               <descriptorRefs>
@@ -51,6 +43,47 @@
     </plugins>
   </build>
 
+  <!--    <build>-->
+  <!--        <plugins>-->
+  <!--            <plugin>-->
+  <!--                &lt;!&ndash; Build an executable JAR &ndash;&gt;-->
+  <!--                <groupId>org.apache.maven.plugins</groupId>-->
+  <!--                <artifactId>maven-jar-plugin</artifactId>-->
+  <!--                <version>3.1.0</version>-->
+  <!--                <configuration>-->
+  <!--                    <archive>-->
+  <!--                        <manifest>-->
+  <!--                            <mainClass>org.example.Main</mainClass> -->
+  <!--                        </manifest>-->
+  <!--                    </archive>-->
+  <!--                </configuration>-->
+  <!--            </plugin>-->
+  <!--            <plugin>-->
+  <!--                <groupId>org.apache.maven.plugins</groupId>-->
+  <!--                <artifactId>maven-shade-plugin</artifactId>-->
+  <!--                <version>2.4.1</version>-->
+  <!--                <executions>-->
+  <!--                    <execution>-->
+  <!--                        <phase>package</phase>-->
+  <!--                        <goals>-->
+  <!--                            <goal>shade</goal>-->
+  <!--                        </goals>-->
+  <!--                        <configuration>-->
+  <!--                            <transformers>-->
+  <!--                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">-->
+  <!--                                    <mainClass>org.sonatype.haven.HavenCli</mainClass>-->
+  <!--                                </transformer>-->
+  <!--                            </transformers>-->
+  <!--                        </configuration>-->
+  <!--                    </execution>-->
+  <!--                </executions>-->
+  <!--            </plugin>-->
+
+
+  <!--        </plugins>-->
+  <!--    </build>-->
+
+  <!-- https://mvnrepository.com/artifact/junit/junit -->
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -58,20 +91,19 @@
       <version>4.13.2</version>
       <scope>test</scope>
     </dependency>
+    <!--         https://mvnrepository.com/artifact/log4j/log4j-->
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-api</artifactId>
-      <version>2.17.2</version>
+      <version>2.19.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-core</artifactId>
-      <version>2.17.2</version>
+      <version>2.19.0</version>
     </dependency>
+
   </dependencies>
 
-  <properties>
-    <maven.compiler.source>8</maven.compiler.source>
-    <maven.compiler.target>8</maven.compiler.target>
-  </properties>
+
 </project>
