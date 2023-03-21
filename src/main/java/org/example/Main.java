@@ -8,15 +8,15 @@ import java.util.Scanner;
 
 
 
-public class Calculator {
+public class Main {
 
-    private static final Logger logger = LogManager.getLogger(Calculator.class);
+    private static final Logger logger = LogManager.getLogger(Main.class);
     public static void main(String[] args) {
-        Calculator calculator = new Calculator();
+        Main calculator = new Main();
         Scanner scanner = new Scanner(System.in);
         double number1, number2;
         do {
-            System.out.println("Calculator-DevOps, Choose to perform operation");
+            System.out.println("Calc-DevOps, Choose to perform operation");
             System.out.print("1. Factorial\n2. Square root\n3. find power\n4. Natural Logarithm\n5. Exit \nEnter your choice: ");
             int choice;
             try {
